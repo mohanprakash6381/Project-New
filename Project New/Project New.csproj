@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{86ED68E3-AC3B-4D24-B0EF-A6F5C6F3EDFB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project_New</RootNamespace>
+    <AssemblyName>Project New</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DailySalesRPT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailySalesRPT.Designer.cs">
+      <DependentUpon>DailySalesRPT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Date Between 2 Days.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Date Between 2 Days.Designer.cs">
+      <DependentUpon>Date Between 2 Days.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBcon.cs" />
+    <Compile Include="DelModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelModel.Designer.cs">
+      <DependentUpon>DelModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delprod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delprod.Designer.cs">
+      <DependentUpon>Delprod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deluser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deluser.Designer.cs">
+      <DependentUpon>Deluser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditModel.Designer.cs">
+      <DependentUpon>EditModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editprod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editprod.Designer.cs">
+      <DependentUpon>Editprod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditUser.Designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsUser.Designer.cs">
+      <DependentUpon>InsUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loginpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loginpage.Designer.cs">
+      <DependentUpon>Loginpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsModel.Designer.cs">
+      <DependentUpon>InsModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insprod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insprod.Designer.cs">
+      <DependentUpon>Insprod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIAdmin.Designer.cs">
+      <DependentUpon>MDIAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIUser.Designer.cs">
+      <DependentUpon>MDIUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modelwiseRPT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modelwiseRPT.Designer.cs">
+      <DependentUpon>modelwiseRPT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductwiseRPT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductwiseRPT.Designer.cs">
+      <DependentUpon>ProductwiseRPT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserViewmodel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserViewmodel.Designer.cs">
+      <DependentUpon>UserViewmodel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewModel.Designer.cs">
+      <DependentUpon>ViewModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewprod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewprod.Designer.cs">
+      <DependentUpon>Viewprod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewUser.Designer.cs">
+      <DependentUpon>viewUser.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DailySalesRPT.resx">
+      <DependentUpon>DailySalesRPT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Date Between 2 Days.resx">
+      <DependentUpon>Date Between 2 Days.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelModel.resx">
+      <DependentUpon>DelModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delprod.resx">
+      <DependentUpon>Delprod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deluser.resx">
+      <DependentUpon>Deluser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditModel.resx">
+      <DependentUpon>EditModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editprod.resx">
+      <DependentUpon>Editprod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsUser.resx">
+      <DependentUpon>InsUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loginpage.resx">
+      <DependentUpon>Loginpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsModel.resx">
+      <DependentUpon>InsModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insprod.resx">
+      <DependentUpon>Insprod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIAdmin.resx">
+      <DependentUpon>MDIAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIUser.resx">
+      <DependentUpon>MDIUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modelwiseRPT.resx">
+      <DependentUpon>modelwiseRPT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductwiseRPT.resx">
+      <DependentUpon>ProductwiseRPT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserViewmodel.resx">
+      <DependentUpon>UserViewmodel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewModel.resx">
+      <DependentUpon>ViewModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewprod.resx">
+      <DependentUpon>Viewprod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewUser.resx">
+      <DependentUpon>viewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
